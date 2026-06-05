@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Makanan</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background-color:#f8f1e7;
+        }
+
+        header{
+            background-color:#8b5e3c;
+            color:white;
+            text-align:center;
+            padding:25px;
+        }
+
+        header h1{
+            margin-bottom:8px;
+        }
+
+        .container{
+            width:90%;
+            max-width:1200px;
+            margin:30px auto;
+        }
+
+        .menu{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            background:white;
+            border-radius:15px;
+            overflow:hidden;
+            box-shadow:0 4px 10px rgba(0,0,0,0.15);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-8px);
+        }
+
+        .card img{
+            width:100%;
+            height:180px;
+            object-fit:cover;
+        }
+
+        .content{
+            padding:15px;
+        }
+
+        .content h3{
+            color:#6b4226;
+            margin-bottom:10px;
+        }
+
+        .content p{
+            color:#555;
+            margin-bottom:15px;
+        }
+
+        .harga{
+            background:#8b5e3c;
+            color:white;
+            padding:8px 15px;
+            border-radius:20px;
+            display:inline-block;
+            font-weight:bold;
+        }
+
+        footer{
+            background:#8b5e3c;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1> WARUNG NDESO JOGJA</h1>
+        <p>Menghadirkan kekayaan kuliner Yogyakarta melalui hidangan tradisional pilihan yang dibuat dengan resep khas, menciptakan pengalaman bersantap yang lezat, hangat, dan penug kenangan.</p>
+    </header>
+
+    <div class="container">
+        <div class="menu">
+
+            <div class="card">
+                <img src="https://cdn.phototourl.com/free/2026-06-04-5b1540ee-071d-4dd2-8be0-5ce1a1aa0695.jpg" alt="Gudeg">
+                <div class="content">
+                    <h3>Gudeg</h3>
+                    <p>Makanan khas jogja yang terbuat dari nangka muda yang dimasak dengan santan dan berbagai rempah hingga bercita rasa manis dan gurih.</p>
+                    <span class="harga">Rp 45.000</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://cdn.phototourl.com/free/2026-06-04-462ea462-3ec7-4ca0-94b6-28074bdda1d1.jpg" alt="Bakpia">
+                <div class="content">
+                    <h3>Bakpia</h3>
+                    <p>Kue bulat kecil berisi kacang hijau, coklat, keju, atau berbagai isian lainnya. Cocok dijadikan oleh-oleh khas jogja.</p>
+                    <span class="harga">Rp 50.000</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://cdn.phototourl.com/free/2026-06-04-68fbdf04-a9c8-4c61-8fcc-2e55e7b45138.jpg" alt="Wedang Uwuh">
+                <div class="content">
+                    <h3>Wedang Uwuh</h3>
+                    <p>Minuman hangat berbahan rempah-rempah seperti jahe, kayu secang, dan cengkih yang memberikan sensasi hangat dan menyegarkan.</p>
+                    <span class="harga">Rp 30.000</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://cdn.phototourl.com/free/2026-06-04-9d65d0ba-ca34-482d-930e-81f6fbe6c26d.jpg" alt="Yangko">
+                <div class="content">
+                    <h3>Yangko</h3>
+                    <p>Kue kenyal berbahan tepung ketan dengan berbagai rasa, sering disebut mirip mochi khas Indonesia.</p>
+                    <span class="harga">Rp 25.000</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://cdn.phototourl.com/free/2026-06-04-05427af5-0afe-43e6-9499-4dce4b5b6e6a.jpg" alt="Sate Klathak">
+                <div class="content">
+                    <h3>Sate Klathak </h3>
+                    <p>Sate kambing yang dibumbui sederhana dengan garam dan merica, lalu ditusuk menggunakan jeruji besi sehingga matang merata.</p>
+                    <span class="harga">Rp 50.000</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://cdn.phototourl.com/free/2026-06-04-7e3943e6-782b-4f0d-b818-19ccadab47d0.jpg" alt="Mangut Lele">
+                <div class="content">
+                    <h3>Mangut Lele</h3>
+                    <p>Lele yang diasap lalu dimasak dalam kuah santan pedas gurih dengan aroma rempah yang khas.</p>
+                    <span class="harga">Rp 65.000</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        © 2026 Warung Ndeso Jogja
